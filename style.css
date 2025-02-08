@@ -1,0 +1,105 @@
+/* General Reset */
+body, h1, h2, p, ul, li, a, button, video {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #0f0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #111, #000);
+    border-bottom: 2px solid #0f0;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+}
+
+header .subtitle {
+    font-size: 1.2rem;
+    color: #0a0;
+    text-shadow: 0 0 5px #0a0;
+}
+
+nav {
+    background: #111;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #0f0;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-shadow: 0 0 5px #0f0;
+}
+
+.section {
+    padding: 40px 20px;
+    border-bottom: 1px solid #0f0;
+}
+
+.section h2 {
+    text-shadow: 0 0 8px #0f0;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #0f0;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #0a0;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #111;
+    border-top: 2px solid #0f0;
+}
+
+/* اضافه کردن استایل برای ویدیوها */
+.videos video {
+    width: 300px;  /* عرض ثابت */
+    height: 200px;  /* ارتفاع ثابت */
+    object-fit: cover;  /* برای حفظ نسبت ویدیو */
+    margin: 10px;
+    border: 2px solid #0f0;  /* مرز سبز رنگ برای جذابیت بیشتر */
+    display: inline-block; /* ویدیوها را به صورت افقی کنار هم قرار می‌دهد */
+}
+
+/* برای مرتب کردن ویدیوها در یک ردیف */
+.videos {
+    text-align: center; /* برای تنظیم درست ویدیوها در وسط */
+    margin-top: 20px;
+}
